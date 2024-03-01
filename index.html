@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Reproductor de Música</title>
+</head>
+<body>
+    <div id="musicPlayer">
+        <div id="songInfo"></div>
+        <div id="controls">
+            <button id="backBtn">Back</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+        </div>
+            <div><!-- Agregar la barra de progreso al HTML -->
+                <input type="range" id="progressBar" value="0" step="1">
+            </div>
+        </div>
+        <div id="volumeBar">        
+            <input type="range" id="volumeControl" value="50">
+        </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
