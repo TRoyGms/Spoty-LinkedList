@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>Reproductor de Música</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fira-code@5.2.0/distr/fira_code.css"/>
+    <title>Humildefy</title>
 </head>
 <body>
-    <div id="musicPlayer">
+    <div id="musicPlayer"> 
+        <div id="Img">
+            <img id="imagen" src="./Album/Imgs/Default.png" alt="DefaultImg" width="250px">
+        </div>
         <div id="songInfo"></div>
+        <div>
+            <div id="timeInfo">
+                <div id="currentTime">00:00</div>
+                <div id="duration">00:00</div>
+            </div>            
+            <input class="progress1" type="range" id="progressBar" value="0" step="1">
+            <div class="progress1"></div>
+        </div>
         <div id="controls">
-            <button id="backBtn">Back</button>
-            <button id="playPauseBtn">Play</button>
-            <button id="nextBtn">Next</button>
+            <button id="backBtn"> |◀ </button>
+            <button id="playPauseBtn">  ▶ </button>
+            <button id="nextBtn"> ▶| </button>
         </div>
-            <div><!-- Agregar la barra de progreso al HTML -->
-                <input type="range" id="progressBar" value="0" step="1">
-            </div>
-        </div>
-        <div id="volumeBar">        
-            <input type="range" id="volumeControl" value="50">
+        <p class="text"> Volumen </p> 
+        <div id="volumeBar">      
+            <input class="vol" type="range" id="volumeControl" value="50">
         </div>
     </div>
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
