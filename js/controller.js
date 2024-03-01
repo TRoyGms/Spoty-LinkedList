@@ -32,7 +32,6 @@ class MusicController {
         }
     }
     
-
     playCurrentSong() {
         const currentSong = this.model.getCurrentSong();
         this.audioElement.src = currentSong.audioSrc;
@@ -70,6 +69,7 @@ class MusicController {
     }
 
     setVolume(volume) {
+        this.audioElement.volume = volume / 100;
         this.model.setVolume(volume);
     }
 }
